@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lyToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/ibPlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onPlayClick"
+                android:src="@android:drawable/ic_media_play" />
+
+            <ImageButton
+                android:id="@+id/ibLoad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onLoadClick"
+                android:src="@android:drawable/ic_menu_upload" />
+
+            <ImageButton
+                android:id="@+id/ibSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onSaveClick"
+                android:src="@android:drawable/ic_menu_save" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.16" >
+
+                <EditText
+                    android:id="@+id/edDuration"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.28"
+                    android:ems="10"
+                    android:hint="duration (secs)"
+                    android:inputType="number"
+                    android:text="1" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/edName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.59"
+                    android:hint="session name"
+                    android:inputType="textPersonName"
+                    android:text="default" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:gravity="center_horizontal"
+                android:text="Pitch (hz)"
+                android:textColor="@color/white" />
+
+            <com.voicesyncelectronicear.TouchPanel
+                android:id="@+id/tpPitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:gravity="center_horizontal"
+                android:text="Balance  (L - R)"
+                android:textColor="@color/white" />
+
+            <com.voicesyncelectronicear.TouchPanel
+                android:id="@+id/tpBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:gravity="center_horizontal"
+                android:text="Noise"
+                android:textColor="@color/white" />
+
+            <com.voicesyncelectronicear.TouchPanel
+                android:id="@+id/tpNoise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.28" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

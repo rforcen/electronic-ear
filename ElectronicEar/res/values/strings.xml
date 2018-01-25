@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">ElectronicEar</string>
+    <string name="title_activity_ee">Electronic Ear</string>
+
+    <color name="red">#ffff0000</color>
+    <color name="white">#ffffffff</color>
+    <color name="blue">#ff0000ff</color>
+    <string name="title_activity_about">Electronic Ear</string>
+    <string name="title_activity_splash">Electronic Ear</string>
+
+</resources>
